@@ -156,7 +156,7 @@ main() {
 
     // PART 2
     // way more than needed
-    gear *gears = (gear *)malloc(sizeof(gear) * input_len);
+    gear *gears = (gear *)calloc(input_len, sizeof(gear));
     assert(gears != NULL);
     tmp_num = 0;
     sym_found = false;
